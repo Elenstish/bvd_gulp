@@ -1,0 +1,98 @@
+
+@import "import/_variables";
+@import "import/_animation";
+
+// ------------ MAIN
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%; //10px	
+/* 	@media (max-width: @sm) {
+	font-size: 52%px; 
+}
+@media (max-width: @md) {
+	font-size: 55.55%;
+}
+@media (max-width: @lg) {
+	font-size: 59%; 
+} */
+}
+body {
+	font: 500 1.8rem @fontFamilyMain;
+	background-color: @bgColorMain;
+	color: @colorDark;
+}
+.h1 {
+	font: 800 4rem @fontFamilyHome;
+	text-transform: uppercase;
+	color: @colorText;
+	line-height: 1.1em;
+	letter-spacing: -3px;
+	margin: 0;
+	@media only screen and (max-width: @md) {
+		font-size: 3rem;
+		letter-spacing: 0;
+	}
+}
+.h2 {
+	font: 500 3rem @fontFamilyMain;
+	text-transform: uppercase;
+	color: @colorDark;
+	line-height: 1.5em;
+	margin: 0;
+}
+.h3 {
+	font: 500 2rem @fontFamilyMain;
+	color: @colorDark;
+	margin: 0;
+}
+p {
+	font-weight: 300;
+}
+a {
+	text-decoration: none;
+	font-family: @fontFamilyMain;
+}
+.submit_btn {
+	width: 100%;
+	max-width: 30rem;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+	border: none;
+	@media only screen and (max-width: @md) {
+		margin-left: auto;
+		margin-right: auto;
+    }
+    &__bgblue {
+		background-color: @bgColorBlue;
+		&:hover {
+			background-color: @colorHover;
+	    }
+	}
+    &__bgdark {
+		color: #fff;
+		background-color: @bgColorPurple;
+		&:hover {
+			background-color: lighten(@bgColorPurple, 10%);
+		}
+	}
+}
+
+.main {
+	width: 100%;
+}
+
+@import "./import/_home";
+@import "./import/_timer";
+@import "./import/_form";
+@import "./import/_popup";
+@import "./import/_chance";
+@import "./import/_services";
+@import "./import/_map";
+@import "./import/_review";
+@import "./import/_footer";

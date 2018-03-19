@@ -1,0 +1,58 @@
+// ------------ SECTION HOME
+.home {
+	height: 1054px;
+	background: @bgColorMain url("../img/bg_home.png") top center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;	
+	padding-right: 9%;
+	@media only screen and (max-width: @lg) {
+		align-items: center;
+		padding-right: 0;
+	}
+	@media only screen and (max-width: @md) {
+		background-position: 40% 100%;
+	}
+		@media only screen and (max-width: @sm) {
+		background-position: 30% 50%;
+	}
+	&_wrap {
+		max-width: 74.4rem;
+		width: 100%;
+		@media only screen and (max-width: @md) {
+			margin-left: 1rem;
+			margin-right: 1rem;	
+			margin-bottom: 1rem;
+		}	
+	}
+	&_h1 {
+		@media only screen and (max-width: @sm) {
+			white-space: pre-line;
+			text-align: center;
+		}		
+	}
+}
+.logo {
+	align-self: center;
+}
+.title {
+	margin-bottom: 3.2rem;
+	@media only screen and (max-width: @md) {
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+}
+.colored {
+	color: @bgColorPurple;
+}
+.d_size {
+	font-size: 5.5rem;
+	@media only screen and (max-width: @md) {
+		font-size: 4rem;
+	}
+}
+.p_size {
+	font-size: 3.3rem;
+}
